@@ -1,0 +1,221 @@
+// Colour Variables
+$orange: #FFA13D;
+$dark-cerulean: #004284;
+$steel-blue: #4A7BB5;
+$maya-blue: #52D6FF;
+$opera-mauve: #AD84AD;
+$black: #000000;
+$white: #FFFFFF;
+$border-line: 2.5px solid $black;
+
+body {
+  background: $orange;
+}
+
+.box{
+  position: relative;
+  height: 400px;
+  width: 600px;
+  border: none;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+}
+
+.head {
+  position: absolute;
+  bottom: 10%;
+  left: 22.5%;
+  width: 55%;
+  height: 60%;
+  background: $steel-blue;
+  border-top-left-radius: 265px;
+  border-top-right-radius: 265px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: $border-line;
+  z-index: 1;
+}
+
+.left-eye {
+  position: absolute;
+  height: 70%;
+  width: 30%;
+  top: 15%;
+  left: 7%;
+  background: $maya-blue;
+  webkit-border-radius: 50%  50%  10%  35%  / 60%   60%   40%  40%;
+  moz-border-radius: 50%  50%  10%  35%  / 60%   60%   40%  40%;
+  border-radius: 50%  50%  10%  35%  / 60%   60%   40%  40%;
+  border: $border-line;
+  z-index: 2;
+}
+
+.left-eye-ball {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  height: 50%;
+  width: 70%;
+  background: $black;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.left-pupil {
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  height: 30%;
+  width: 30%;
+  background: $white;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.right-eye {
+  position: absolute;
+  height: 70%;
+  width: 30%;
+  top: 15%;
+  right: 7%;
+  background: $maya-blue;
+  webkit-border-radius: 50%  50%  35%  10%  / 60%   60%   40%  40%;
+  moz-border-radius: 50%  50%  35%  10%  / 60%   60%   40%  40%;
+  border-radius: 50%  50%  35%  10%  / 60%   60%   40%  40%;
+  border: $border-line;
+  z-index: 2;
+}
+
+.right-eye-ball {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+  height: 50%;
+  width: 70%;
+  background: $black;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.right-pupil {
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  height: 30%;
+  width: 30%;
+  background: $white;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.nose {
+  position: absolute;
+  height: 30%;
+  width: 22%;
+  top: 58.5%;
+  left: 38.25%;
+  background: $dark-cerulean;
+  border-radius: 50%;
+  border: $border-line;
+  z-index: 5;
+}
+
+.mouth {
+  position: absolute;
+  height: 8%;
+  width: 70%;
+  bottom: 0%;
+  left: 14.5%;
+  background: $maya-blue;
+  border: $border-line;
+  border-bottom: none;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  z-index: 5;
+}
+
+.line {
+  position: absolute;
+  height: 1%;
+  width: 1%;
+  bottom: 9%;
+  left: 49.5%;
+  background: $black;
+  z-index: 5;
+}
+
+.left-ear {
+  position: absolute;
+  height: 70%;
+  width: 15%;
+  top: 10%;
+  left: 11%;
+  background: $opera-mauve;
+  border: $border-line;
+  -webkit-border-radius: 150%  65%  10%  200%  / 150%   60%   150%  50%;
+  -moz-border-radius: 150%  65%  10%  200%  / 150%   60%   150%  50%;
+   border-radius: 150%  65%  10%  200%  / 150%   60%   150%  50%;
+  z-index: 0;
+}
+
+.left-ear-indent-outer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 25%;
+  left: 9%;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  border-right: 20px solid $black;
+  transform: rotate(190deg);
+}
+
+.left-ear-indent-inner {
+    position: relative;
+    top: -20px;
+    left: 2px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid $orange;
+}
+
+.right-ear {
+  position: absolute;
+  height: 70%;
+  width: 15%;
+  top: 10%;
+  right: 11%;
+  background: $opera-mauve;
+  border: $border-line;
+  -webkit-border-radius: 65% 150% 200%  10%  / 60%   150%   50%  150%;
+  -moz-border-radius: 65% 150% 200%  10%  / 60%   150%   50%  150%;
+   border-radius: 65% 150% 200%  10%  / 60%   150%   50%  150%;
+  z-index: 0;
+}
+
+.right-ear-indent-outer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 20%;
+  right: -2%;
+  border-top: 20px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 28px solid $black;
+}
+
+.right-ear-indent-inner {
+    position: relative;
+    top: -23px;
+    right: -6.9px;
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 28px solid $orange;
+}
